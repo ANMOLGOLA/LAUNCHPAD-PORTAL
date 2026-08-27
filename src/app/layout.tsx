@@ -16,7 +16,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'Team Launchpad Portal',
-  description: 'Verified Participation Credentials for Google Student Ambassador Events',
+  description: 'Verified Participation Credentials for Community Hub Events',
 };
 
 export default function RootLayout({
@@ -47,7 +47,7 @@ export default function RootLayout({
 
         <footer className="bg-white border-t border-slate-100 py-6 text-center text-xs text-slate-500">
           <div className="max-w-6xl mx-auto px-4">
-            Built for Google Student Ambassador Program • Team Launchpad Portal
+            Built for Community Hub Portal
           </div>
         </footer>
       </body>

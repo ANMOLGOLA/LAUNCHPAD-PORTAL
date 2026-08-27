@@ -103,20 +103,34 @@ export default function ClaimPage() {
           <h1 className="text-xl font-bold font-display text-slate-900">Welcome, {claim.name || claim.email.split('@')[0]}</h1>
           <p className="text-sm text-slate-500">Verified participant for {event.name}</p>
         </div>
-        <button
-          onClick={async () => {
-            try {
-              await signOut(auth);
-            } catch(e) {
-              console.error(e);
-            }
-            localStorage.removeItem('claim_token');
-            router.push('/');
-          }}
-          className="text-sm font-semibold text-rose-600 bg-rose-50 hover:bg-rose-100 px-4 py-2 rounded-xl transition border border-rose-100"
-        >
-          Sign Out / Switch Account
-        </button>
+        <div className="flex gap-3">
+          <button onClick={() => router.push('/profile')} className="text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-xl transition border border-slate-200">
+            Profile
+          </button>
+          <button onClick={() => router.push('/directory')} className="text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-xl transition border border-slate-200">
+            Directory
+          </button>
+          <button onClick={() => router.push('/hub')} className="text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-xl transition border border-blue-200">
+            Hub
+          </button>
+          <button onClick={() => router.push('/events')} className="text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-xl transition border border-emerald-200">
+            Events
+          </button>
+          <button
+            onClick={async () => {
+              try {
+                await signOut(auth);
+              } catch(e) {
+                console.error(e);
+              }
+              localStorage.removeItem('claim_token');
+              router.push('/');
+            }}
+            className="text-sm font-semibold text-rose-600 bg-rose-50 hover:bg-rose-100 px-4 py-2 rounded-xl transition border border-rose-100"
+          >
+            Sign Out
+          </button>
+        </div>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8 items-start">

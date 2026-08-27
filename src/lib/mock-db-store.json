@@ -188,8 +188,8 @@
       "participant_id": "8b80769c-82d3-4f7f-9246-f784537ef03c",
       "email": "anmolgola1318@gmail.com",
       "status": "unlocked",
-      "email_verified_at": "2026-08-27T16:31:07.170Z",
-      "session_token": "01bcf1b912d52899c5d7a41227856c010bef47584d1617b83bbe689ceb93a0ba",
+      "email_verified_at": "2026-08-27T17:10:34.694Z",
+      "session_token": "de20ba92c34b1e5a080fe8e09e389fcd5dc9c99559d4337e0592bf3f94d02855",
       "task_started_at": "2026-08-27T13:11:36.677Z",
       "task_completed_at": "2026-08-27T13:11:36.677Z",
       "certificate_id": "TLP-2026-5WRJPF",
@@ -1086,6 +1086,70 @@
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
       "id": "49c5a0bf-bef3-469c-a406-ddb30968aa8b",
       "created_at": "2026-08-27T16:31:07.624Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "fb0c0e2d-f813-41cd-bee8-0a6c8db44d63",
+      "created_at": "2026-08-27T16:34:47.200Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "2cea6dcf-dd26-4ce5-b3e2-35e02263cab4",
+      "created_at": "2026-08-27T16:42:44.387Z"
+    },
+    {
+      "action": "FIREBASE_LOGIN_ATTEMPT",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "is_eligible": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "0ddfb058-3f9f-46fc-ab36-34dbf1a243a1",
+      "created_at": "2026-08-27T17:10:34.685Z"
+    },
+    {
+      "action": "PARTICIPANT_VERIFIED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "claim_id": "1b1e6d38-9d1f-4cd4-ba14-5262d60e072a"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "b9a8afa2-6f9a-4eb0-9d6f-c1de057fcf84",
+      "created_at": "2026-08-27T17:10:34.698Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "014e0fc0-9470-4ab2-850d-0cd4b3b14564",
+      "created_at": "2026-08-27T17:10:36.063Z"
     }
-  ]
+  ],
+  "users": [],
+  "posts": [],
+  "comments": [],
+  "announcements": []
 }
