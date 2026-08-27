@@ -1,0 +1,886 @@
+{
+  "events": [
+    {
+      "id": "e1111111-1111-1111-1111-111111111111",
+      "name": "Team Launchpad 2026 Ambassador Boot Camp",
+      "slug": "ambassador-bootcamp-2026",
+      "description": "The mandatory orientation event for all Google Student Ambassadors.",
+      "event_date": "2026-08-26",
+      "status": "closed",
+      "task_url": "https://forms.gle/sample-ambassador-feedback",
+      "task_instructions": "Please open the feedback form link, complete all questions, and return here to retrieve your certificate.",
+      "verification_mode": "click_detection",
+      "template_path": "templates/bootcamp.pdf",
+      "template_fields": {
+        "name": {
+          "x": 100,
+          "y": 300,
+          "fontSize": 28
+        },
+        "course": {
+          "x": 100,
+          "y": 360,
+          "fontSize": 20
+        },
+        "date": {
+          "x": 100,
+          "y": 420,
+          "fontSize": 12
+        }
+      }
+    },
+    {
+      "name": "Fund My Crazy ",
+      "slug": "fund-my-crazy-",
+      "description": "",
+      "event_date": "2026-08-24",
+      "status": "active",
+      "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+      "verification_mode": "click_detection",
+      "template_path": "/uploads/templates/template_69c7524b-5450-40dc-b03d-3f874e86fa16_1787841980757.jpg",
+      "template_fields": {},
+      "id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "task_instructions": "go through the link once and spend at least two minutes ."
+    }
+  ],
+  "participants": [
+    {
+      "id": "p1111111-1111-1111-1111-111111111111",
+      "event_id": "e1111111-1111-1111-1111-111111111111",
+      "email": "attendee@example.com",
+      "name": "Jane Doe"
+    },
+    {
+      "id": "47f6e078-98b2-4395-ba4a-34a8d23a75f0",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "arpitdahiya085@gmail.com",
+      "name": "ARPIT DAHIYA"
+    },
+    {
+      "id": "7201697f-7a86-40e7-a012-8cd1b385a534",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "arpitsingh.er7@gmail.com",
+      "name": "Arpit Kumar Singh"
+    },
+    {
+      "id": "66cd7fa4-9c15-40c1-9c69-b26cc310920a",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "jaatavdesh99@gmail.com",
+      "name": "Avdesh"
+    },
+    {
+      "id": "f247a24e-44de-420d-9aad-d2e8a0d1b4e1",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "adi23042008@gmail.com",
+      "name": "Adi Jain"
+    },
+    {
+      "id": "de6cc133-dd43-41a6-8a31-677560025f5c",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "harshve01@gmail.com",
+      "name": "Harsh Verma"
+    },
+    {
+      "id": "bfe6f4b8-9227-4553-a62f-9da9b909feec",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "madhavsh2006@gmail.com",
+      "name": "Madhav Sharma"
+    },
+    {
+      "id": "563b9ce9-d65b-494e-989a-8eca5b8595c8",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "akshat.shukla_cs25@gla.ac.in",
+      "name": "Akshat shukla"
+    },
+    {
+      "id": "ea559d3e-3dda-4ee3-9437-e2e1fa16e69d",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "akshatkkapoor135@gmail.com",
+      "name": "Akshat Kapoor"
+    },
+    {
+      "id": "e0fc15f0-82f4-46b0-816e-f1fae33191cb",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "vanshshakya007@gmail.com",
+      "name": "Vansh Shakya"
+    },
+    {
+      "id": "5828742b-4d9b-4796-a84d-fef89e15dea9",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "p.niketasdaemon@gmail.com",
+      "name": "Prince Thakur"
+    },
+    {
+      "id": "38234d07-175f-4a6f-a7e1-5964c33348a9",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "princeraj887362@gmail.com",
+      "name": "Prince Raj"
+    },
+    {
+      "id": "8d0d42a1-5451-44b4-9486-582ad77fac22",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "princek22072007@gmail.com",
+      "name": "PRINCE KUMAR"
+    },
+    {
+      "id": "93c5368d-fd36-4791-b1a8-ba43b99323d3",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "princeg6208@gmail.com",
+      "name": "Prince Goyal"
+    },
+    {
+      "id": "66578ad9-777e-4107-9840-060a8ac6dbab",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "harshbhadoriya456@gmail.com",
+      "name": "Harsh Bhadoriya"
+    },
+    {
+      "id": "66ca99f5-df0a-4d3c-a224-2718f8a03caf",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "dhananjay0376@gmail.com",
+      "name": "Dhananjay"
+    },
+    {
+      "id": "e2af8707-4431-4b5c-ade3-a257eeb17b8a",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "himankmehariya1433@gmail.com",
+      "name": "Himank"
+    },
+    {
+      "id": "a223a28a-56fc-4c85-a8ba-ffe1b7cc59f6",
+      "event_id": "e1111111-1111-1111-1111-111111111111",
+      "email": "anmolgola1318@gmail.com",
+      "name": "anmol"
+    },
+    {
+      "id": "8b80769c-82d3-4f7f-9246-f784537ef03c",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "email": "anmolgola1318@gmail.com",
+      "name": "abguvygh"
+    }
+  ],
+  "claims": [
+    {
+      "id": "65c49077-e2b3-4585-a668-07ff0978c634",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "participant_id": "e2af8707-4431-4b5c-ade3-a257eeb17b8a",
+      "email": "himankmehariya1433@gmail.com",
+      "status": "pending",
+      "otp_code": "738337",
+      "otp_expires_at": "2026-08-27T13:12:54.627Z"
+    },
+    {
+      "id": "1b1e6d38-9d1f-4cd4-ba14-5262d60e072a",
+      "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "participant_id": "8b80769c-82d3-4f7f-9246-f784537ef03c",
+      "email": "anmolgola1318@gmail.com",
+      "status": "unlocked",
+      "email_verified_at": "2026-08-27T13:11:24.287Z",
+      "session_token": "5300f47c9e7000cfdb45ff59c8227aa5d918105a026ff5bc3d699d0f31dd1a9e",
+      "task_started_at": "2026-08-27T13:11:36.677Z",
+      "task_completed_at": "2026-08-27T13:11:36.677Z",
+      "certificate_id": "TLP-2026-5WRJPF",
+      "certificate_generated_at": "2026-08-27T13:11:36.677Z",
+      "task_click_meta": {
+        "ip": "::1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+        "clicked_at": "2026-08-27T13:11:36.677Z"
+      }
+    }
+  ],
+  "audit_logs": [
+    {
+      "action": "ADMIN_OTP_REQUESTED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "is_admin": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "cbf024f6-0007-46de-b273-8978de301e73",
+      "created_at": "2026-08-27T03:09:11.758Z"
+    },
+    {
+      "action": "ADMIN_OTP_REQUESTED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "is_admin": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "58333bd8-3039-4259-8980-b27c051c5c17",
+      "created_at": "2026-08-27T03:09:33.653Z"
+    },
+    {
+      "action": "ADMIN_OTP_REQUESTED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "is_admin": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "e4028cf6-921c-47f4-9b20-fdef8845beaf",
+      "created_at": "2026-08-27T03:10:08.254Z"
+    },
+    {
+      "action": "ADMIN_OTP_REQUESTED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "is_admin": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "a71f6e34-ecc8-472a-91b3-67a1b52d82e0",
+      "created_at": "2026-08-27T03:22:29.834Z"
+    },
+    {
+      "action": "ADMIN_OTP_REQUESTED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "is_admin": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "3a5e1f33-6b60-4f55-a11e-47f1093178dc",
+      "created_at": "2026-08-27T03:24:44.075Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_CREATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "7d4a1887-1a17-4b75-8b3b-fc78b9da1449",
+      "created_at": "2026-08-27T10:12:55.323Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "closed",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "12ea2eb1-d8e0-4ae7-a85a-3ab6d66809b0",
+      "created_at": "2026-08-27T10:13:48.643Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_BULK_IMPORT",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "count": 17
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "b27907bb-6a90-4f07-8761-7b5e67a67f73",
+      "created_at": "2026-08-27T10:29:15.550Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "0880e2e6-7141-4878-8f57-b0e4fc03570c"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "356e6da0-e6c7-4cb0-a1ea-844822ede6b5",
+      "created_at": "2026-08-27T10:30:22.694Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "1787cf2a-0c36-4063-8d2e-973126d4c8ab"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "4f8f30f5-43ac-480d-bb29-821f57240366",
+      "created_at": "2026-08-27T10:30:32.068Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "04a6dd36-0719-4a99-a2c9-464fd6edb50b"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "dd5628af-f293-43a8-a90d-44c797ff5ce7",
+      "created_at": "2026-08-27T10:30:35.796Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "9a88080d-ddcd-489c-91f3-b5d0b8139777"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "240c04bf-f095-43c4-bada-c136afba6484",
+      "created_at": "2026-08-27T10:30:36.884Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "b05ebffe-691d-45c8-9727-28fc5dcf2633",
+      "created_at": "2026-08-27T10:30:38.711Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "bfeb1721-d651-4224-9711-cf79e70fb1ca",
+      "created_at": "2026-08-27T10:30:39.762Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "6d4875cd-a819-4ead-b96a-d5aa43a3ab42",
+      "created_at": "2026-08-27T10:30:40.464Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "acbd509e-fa71-48ff-9851-c87a8da50977",
+      "created_at": "2026-08-27T10:30:41.146Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "e455d49c-c9c2-4940-96b2-e58012dbc86b",
+      "created_at": "2026-08-27T10:30:41.717Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "8c09387f-7c62-48b0-a57c-f4134d37af82",
+      "created_at": "2026-08-27T10:30:42.365Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "aa95b9f4-de08-42ba-8d8f-61dffbfa348f",
+      "created_at": "2026-08-27T10:30:47.130Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "6081def0-69e3-463a-b35b-c49f83b27231",
+      "created_at": "2026-08-27T10:30:49.470Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "e0517c81-8c76-4633-901b-bfed3cf03ee7",
+      "created_at": "2026-08-27T10:30:53.420Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "3566728a-c9bf-4a76-9a11-c3e5833aaf91"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "a8c6e9ba-07fb-4286-9ae1-d61244795b63",
+      "created_at": "2026-08-27T10:30:59.994Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "9655b224-93f7-474d-9aa9-e4ed4409f46b"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "452c0ba9-f2e4-461b-9d1c-7f73c32754dc",
+      "created_at": "2026-08-27T10:31:02.230Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "9adb6fd4-2d2a-4200-b1fd-9fe76edf8d77"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "4375536c-005f-43c5-9dc3-0b4b8e149a05",
+      "created_at": "2026-08-27T10:31:06.323Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "44517940-52bc-4ef9-8048-558183acaab0"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "5ccacbdd-9467-4f74-8f04-0bf0d318cbc0",
+      "created_at": "2026-08-27T10:31:08.395Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "1a736ac8-4355-45fe-801b-9895e39c885b"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "0dde4bab-1ae1-41ed-beaa-9863b2569b09",
+      "created_at": "2026-08-27T10:31:10.931Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "a571d9b9-882b-4b09-ad53-b4bd8a1d4189"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "d2865269-46c3-4b8d-a53e-dd27ea335066",
+      "created_at": "2026-08-27T10:31:14.507Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "ca4f4cf5-fe2d-4d32-af0e-9148158ecdaf"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "0007f3e0-c313-4118-8844-b312ea5e6a2c",
+      "created_at": "2026-08-27T10:31:17.883Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "0ff569bd-2615-432a-a8dd-758b6fced4c5"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "a10a6e9d-0420-4994-82a8-e04ae49876e6",
+      "created_at": "2026-08-27T10:31:20.018Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "611ed79e-1e55-4c6b-96b6-6e65b7d3c019"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "456f876f-bdd9-431e-a99f-88e18e5192fa",
+      "created_at": "2026-08-27T10:31:22.554Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "8032a814-fb1d-489d-a00e-b9d803f5eb0d"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "8e8956a2-4b04-4fcb-a988-cd98df38fd6a",
+      "created_at": "2026-08-27T10:31:24.417Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "138a7141-6d9c-4525-9ee3-66143d1aa279"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "6195e18f-18b8-4915-9acc-c7c51f2d573d",
+      "created_at": "2026-08-27T10:34:57.889Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_REMOVE",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "participant_id": "fcad4a35-350f-4f6c-ae33-f24435b7adfd"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "08a7596c-b53b-4215-a98c-4f3e3c953c3d",
+      "created_at": "2026-08-27T10:35:00.997Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_BULK_IMPORT",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "count": 16
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "0cd5fe44-b8e1-4b23-bc06-67a71f957dbe",
+      "created_at": "2026-08-27T10:43:08.265Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "closed",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "213009c1-dd02-4bae-9ba6-cd0662b6788e",
+      "created_at": "2026-08-27T12:41:08.048Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "closed",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "ed148de6-8e53-4628-9650-b413f0b54833",
+      "created_at": "2026-08-27T12:43:01.451Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_STATUS_CHANGED",
+      "target": "e1111111-1111-1111-1111-111111111111",
+      "meta": {
+        "status": "closed",
+        "auto_closed": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "763f33e1-215f-498f-8c6f-d342b702183a",
+      "created_at": "2026-08-27T12:43:38.304Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "active",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "81ef916a-b500-401b-8254-9c50db46b87c",
+      "created_at": "2026-08-27T12:43:38.307Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "active",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "1df1043f-e746-4bbc-97d2-fc6dec0f3bdf",
+      "created_at": "2026-08-27T12:45:13.942Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "active",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "89ab77ba-7904-4534-98ec-b2d65c63406e",
+      "created_at": "2026-08-27T12:48:56.478Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "active",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection",
+        "template_path": "/uploads/templates/template_69c7524b-5450-40dc-b03d-3f874e86fa16_1787834958413.png"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "7da44b97-5ee5-4c49-bd64-7fd76a8514f5",
+      "created_at": "2026-08-27T12:49:26.113Z"
+    },
+    {
+      "action": "OTP_REQUESTED",
+      "target": "himankmehariya1433@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "is_eligible": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "663508a7-bdbf-4726-9273-2de2876ef337",
+      "created_at": "2026-08-27T12:57:54.624Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_ADD",
+      "target": "e1111111-1111-1111-1111-111111111111",
+      "meta": {
+        "email": "anmolgola1318@gmail.com",
+        "name": "anmol"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "fe9bf1c9-891c-46f0-a594-053ee1786b9f",
+      "created_at": "2026-08-27T13:06:05.478Z"
+    },
+    {
+      "action": "FIREBASE_LOGIN_ATTEMPT",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "is_eligible": false
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "76d0f5f1-940c-48f9-9b4d-7b8a9d1a3242",
+      "created_at": "2026-08-27T13:06:38.729Z"
+    },
+    {
+      "action": "FIREBASE_LOGIN_ATTEMPT",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "is_eligible": false
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "593337a3-9e93-4e7a-ae99-d8128e99f827",
+      "created_at": "2026-08-27T13:07:27.973Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "ALLOWLIST_ADD",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "email": "anmolgola1318@gmail.com",
+        "name": "abguvygh"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "7d76a7d0-7561-47d1-bc16-55416ab2e773",
+      "created_at": "2026-08-27T13:10:57.945Z"
+    },
+    {
+      "action": "FIREBASE_LOGIN_ATTEMPT",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "is_eligible": true
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "9e587515-3d11-45fe-8105-46958126f442",
+      "created_at": "2026-08-27T13:11:24.245Z"
+    },
+    {
+      "action": "PARTICIPANT_VERIFIED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "claim_id": "1b1e6d38-9d1f-4cd4-ba14-5262d60e072a"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "f7c24351-0262-48aa-9f5a-534ee8387110",
+      "created_at": "2026-08-27T13:11:24.293Z"
+    },
+    {
+      "action": "TASK_CLICKED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "certificate_id": "TLP-2026-5WRJPF"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "1bca9ad8-7547-48c1-8f0f-f213ddddd483",
+      "created_at": "2026-08-27T13:11:36.681Z"
+    },
+    {
+      "action": "CERTIFICATE_EMAILED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF"
+      },
+      "ip": "system",
+      "user_agent": "system",
+      "id": "deff635b-0e57-4603-88b6-ee34ccba3ce1",
+      "created_at": "2026-08-27T13:11:36.751Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "39f40a85-1048-437d-b30a-d8ad67f7e4f4",
+      "created_at": "2026-08-27T13:12:43.952Z"
+    },
+    {
+      "actor": "anmolgola1318@gmail.com",
+      "action": "EVENT_UPDATED",
+      "target": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+      "meta": {
+        "name": "Fund My Crazy ",
+        "slug": "fund-my-crazy-",
+        "description": "",
+        "event_date": "2026-08-24",
+        "status": "active",
+        "task_url": "https://learn.microsoft.com/?wt.mc_id=studentamb_516084",
+        "task_instructions": "go through the link once and spend at least two minutes .",
+        "verification_mode": "click_detection",
+        "template_path": "/uploads/templates/template_69c7524b-5450-40dc-b03d-3f874e86fa16_1787841980757.jpg",
+        "template_fields": {}
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "ef1683e7-9215-4a67-a2ce-ab829dbf1a04",
+      "created_at": "2026-08-27T14:46:26.477Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "39f100a0-0083-4f4d-b91f-b821079ac99c",
+      "created_at": "2026-08-27T14:48:50.010Z"
+    }
+  ]
+}
