@@ -62,7 +62,7 @@ export async function GET(request: Request) {
       user_agent: request.headers.get('user-agent') || 'unknown'
     });
 
-    const inline = url.searchParams.get('inline') === 'true';
+    const inline = searchParams.get('inline') === 'true';
 
     const response = new NextResponse(new Uint8Array(pdfBuffer));
     response.headers.set('Content-Type', 'application/pdf');

@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Award, CheckCircle2, Circle, Clock, ExternalLink, FileDown, Lock, MailCheck, RotateCcw } from 'lucide-react';
+import { auth } from '@/lib/firebase';
+import { signOut } from 'firebase/auth';
 
 interface ClaimStatus {
   id: string;
@@ -102,7 +104,12 @@ export default function ClaimPage() {
           <p className="text-sm text-slate-500">Verified participant for {event.name}</p>
         </div>
         <button
-          onClick={() => {
+          onClick={async () => {
+            try {
+              await signOut(auth);
+            } catch(e) {
+              console.error(e);
+            }
             localStorage.removeItem('claim_token');
             router.push('/');
           }}
