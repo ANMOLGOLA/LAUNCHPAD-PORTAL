@@ -237,7 +237,7 @@ export default function ClaimPage() {
               <div className="border border-slate-200 rounded-xl bg-slate-100 flex flex-col items-center justify-center relative overflow-hidden aspect-[1.414/1] w-full shadow-inner group">
                 <iframe 
                   src={`/api/claim/download?token=${token}&inline=true#toolbar=0&navpanes=0&scrollbar=0`}
-                  className="absolute inset-0 w-full h-full border-0 pointer-events-auto"
+                  className="absolute inset-0 w-full h-full border-0 pointer-events-none"
                   title="Certificate Ready Preview"
                 />
               </div>

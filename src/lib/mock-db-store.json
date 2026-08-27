@@ -965,6 +965,42 @@
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
       "id": "7a6d3992-1f50-46ff-b757-918ca2e0a80c",
       "created_at": "2026-08-27T16:22:23.435Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "6862c07d-e399-40aa-bf9d-e2fd78e78922",
+      "created_at": "2026-08-27T16:27:00.506Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "1d91eece-f342-4fd5-a6f4-966d5e790fb4",
+      "created_at": "2026-08-27T16:28:26.185Z"
+    },
+    {
+      "action": "CERTIFICATE_DOWNLOADED",
+      "target": "anmolgola1318@gmail.com",
+      "meta": {
+        "certificate_id": "TLP-2026-5WRJPF",
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16"
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "d71d4e16-a5e5-48ad-abd3-9c961d9c15ca",
+      "created_at": "2026-08-27T16:29:13.822Z"
     }
   ]
 }
