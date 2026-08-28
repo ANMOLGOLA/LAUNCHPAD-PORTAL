@@ -1146,6 +1146,18 @@
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
       "id": "014e0fc0-9470-4ab2-850d-0cd4b3b14564",
       "created_at": "2026-08-27T17:10:36.063Z"
+    },
+    {
+      "action": "FIREBASE_LOGIN_ATTEMPT",
+      "target": "anmol.gola_cs.aiml25@gla.ac.in",
+      "meta": {
+        "event_id": "69c7524b-5450-40dc-b03d-3f874e86fa16",
+        "is_eligible": false
+      },
+      "ip": "::1",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "id": "3c23df9e-b1d7-4b74-9c25-cd3fa7bb8968",
+      "created_at": "2026-08-28T06:17:40.266Z"
     }
   ],
   "users": [],

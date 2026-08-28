@@ -36,10 +36,6 @@ export async function POST(request: Request) {
       user_agent: request.headers.get('user-agent') || 'unknown'
     });
 
-    if (!participant) {
-      return NextResponse.json({ success: false, message: 'Your email is not on the participant list for this event.' }, { status: 403 });
-    }
-
     // 4. Update or create claim and generate session token
     let claim = await db.getClaimByEmail(activeEvent.id, email);
     const sessionToken = crypto.randomBytes(32).toString('hex');
@@ -51,7 +47,7 @@ export async function POST(request: Request) {
         status: claim.status === 'pending' ? 'verified' : claim.status
       }) as any;
     } else {
-      claim = await db.createOrUpdateClaim(activeEvent.id, email, participant.id, {
+      claim = await db.createOrUpdateClaim(activeEvent.id, email, participant?.id || '', {
         email_verified_at: new Date().toISOString(),
         session_token: sessionToken,
         status: 'verified'

@@ -24,6 +24,7 @@ export async function GET(request: Request) {
         id: claim.id,
         email: claim.email,
         name: participant?.name || claim.email.split('@')[0],
+        participant_id: claim.participant_id || '',
         status: claim.status,
         email_verified_at: claim.email_verified_at,
         task_started_at: claim.task_started_at,

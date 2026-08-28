@@ -21,6 +21,11 @@ export async function GET(
     }
 
     const participant = await db.getParticipant(claim.event_id, claim.email);
+    
+    if (!participant || !claim.participant_id) {
+      return NextResponse.redirect(new URL('/claim?error=not_participant', request.url));
+    }
+
     const now = new Date().toISOString();
 
     // Check if task is already completed

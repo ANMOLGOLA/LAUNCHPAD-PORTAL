@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Award, CheckCircle2, Circle, Clock, ExternalLink, FileDown, Lock, MailCheck, RotateCcw } from 'lucide-react';
+import { Award, CheckCircle2, Circle, Clock, ExternalLink, FileDown, Lock, MailCheck, RotateCcw, ShieldAlert } from 'lucide-react';
 import { auth } from '@/lib/firebase';
 import { signOut } from 'firebase/auth';
 
@@ -10,6 +10,7 @@ interface ClaimStatus {
   id: string;
   email: string;
   name: string;
+  participant_id?: string;
   status: 'pending' | 'verified' | 'unlocked' | 'revoked';
   email_verified_at?: string;
   task_started_at?: string;
@@ -209,38 +210,50 @@ export default function ClaimPage() {
           <h2 className="text-xl font-bold font-display text-slate-800 mb-2">
             Step 2: Mandatory Task Link
           </h2>
-          <p className="text-sm text-slate-500 mb-6">
-            The coordinator requires you to visit the following event survey or document before claiming your credentials.
-          </p>
-
-          {isTaskCompleted ? (
-            <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-4 flex gap-3 text-emerald-800 text-sm">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-              <div>
-                <span className="font-semibold block">Task Completed!</span>
-                Your visit to the coordinator's link has been registered. Your certificate is now generated and unlocked.
-              </div>
+          
+          {!claim.participant_id ? (
+            <div className="bg-amber-50 border border-amber-100 rounded-xl p-6 text-center text-amber-800 text-sm">
+              <ShieldAlert className="w-8 h-8 text-amber-500 mx-auto mb-3" />
+              <span className="font-semibold block text-base mb-2">Verification Required</span>
+              Your email address has not been registered as an official participant for this event by the coordinator. 
+              Therefore, you cannot claim a certificate. If you believe this is an error, please contact the coordinator or register for the event.
             </div>
           ) : (
-            <div className="border border-slate-100 bg-slate-50/50 rounded-xl p-6 text-center">
-              <p className="text-sm font-semibold text-slate-700 mb-2">Instructions:</p>
-              <p className="text-xs text-slate-500 mb-6 max-w-md mx-auto leading-relaxed">
-                {event.task_instructions || "Click the 'Start Task' button below. This will open the required link in a new browser tab. Your unlock status updates instantly upon click."}
+            <>
+              <p className="text-sm text-slate-500 mb-6">
+                The coordinator requires you to visit the following event survey or document before claiming your credentials.
               </p>
-              <a
-                href={`/t/${token}`}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-xl text-sm transition shadow-sm hover:shadow active:scale-[0.98]"
-              >
-                Start Task <ExternalLink className="w-4 h-4" />
-              </a>
-            </div>
+
+              {isTaskCompleted ? (
+                <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-4 flex gap-3 text-emerald-800 text-sm">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold block">Task Completed!</span>
+                    Your visit to the coordinator's link has been registered. Your certificate is now generated and unlocked.
+                  </div>
+                </div>
+              ) : (
+                <div className="border border-slate-100 bg-slate-50/50 rounded-xl p-6 text-center">
+                  <p className="text-sm font-semibold text-slate-700 mb-2">Instructions:</p>
+                  <p className="text-xs text-slate-500 mb-6 max-w-md mx-auto leading-relaxed">
+                    {event.task_instructions || "Click the 'Start Task' button below. This will open the required link in a new browser tab. Your unlock status updates instantly upon click."}
+                  </p>
+                  <a
+                    href={`/t/${token}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-xl text-sm transition shadow-sm hover:shadow active:scale-[0.98]"
+                  >
+                    Start Task <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              )}
+            </>
           )}
         </div>
 
         {/* Step 3 Certificate Card */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <div className={`bg-white border border-slate-200 rounded-2xl p-6 shadow-sm ${!claim.participant_id ? 'opacity-50 pointer-events-none' : ''}`}>
           <h2 className="text-xl font-bold font-display text-slate-800 mb-2">
             Step 3: Retrieve Certificate
           </h2>
@@ -295,11 +308,3 @@ export default function ClaimPage() {
   );
 }
 
-// Simple fallback component
-function ShieldAlert({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-    </svg>
-  );
-}

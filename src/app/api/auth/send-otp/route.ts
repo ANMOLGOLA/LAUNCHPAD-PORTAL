@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     // 2. Check allowlist for this email and event
     const participant = await db.getParticipant(activeEvent.id, email);
     
-    // Always write audit log for tracking claim attempts
+    // Always write audit log for tracking login attempts
     await db.createAuditLog({
       action: 'OTP_REQUESTED',
       target: email,
@@ -32,23 +32,21 @@ export async function POST(request: Request) {
       user_agent: request.headers.get('user-agent') || 'unknown'
     });
 
-    if (participant) {
-      // Generate 6-digit OTP code
-      const otp = Math.floor(100000 + Math.random() * 900000).toString();
-      const expiresAt = new Date(Date.now() + 15 * 60 * 1000).toISOString(); // 15 mins validity
+    // Generate 6-digit OTP code
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const expiresAt = new Date(Date.now() + 15 * 60 * 1000).toISOString(); // 15 mins validity
 
-      // Create or update claim record
-      await db.createOrUpdateClaim(activeEvent.id, email, participant.id, {
-        otp_code: otp,
-        otp_expires_at: expiresAt,
-        status: 'pending'
-      });
+    // Create or update claim record (session) for everyone
+    await db.createOrUpdateClaim(activeEvent.id, email, participant?.id || '', {
+      otp_code: otp,
+      otp_expires_at: expiresAt,
+      status: 'pending'
+    });
 
-      // Send OTP Email
-      const emailSent = await sendOTPEmail(email, otp, activeEvent.name);
-      if (!emailSent) {
-        console.error('Failed to send OTP email to:', email);
-      }
+    // Send OTP Email
+    const emailSent = await sendOTPEmail(email, otp, activeEvent.name);
+    if (!emailSent) {
+      console.error('Failed to send OTP email to:', email);
     }
 
     // Always respond neutrally to prevent email enumeration
