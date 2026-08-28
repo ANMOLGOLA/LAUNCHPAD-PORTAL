@@ -25,9 +25,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: false, message: 'Title and content are required' }, { status: 400 });
     }
 
+    const profile = await db.getUserProfile(claim.email);
+    const author_name = profile?.name || claim.email.split('@')[0];
+
     const post = await db.createPost({
       author_id: claim.participant_id || claim.email,
-      author_name: claim.name || claim.email.split('@')[0],
+      author_name: author_name,
       title: body.title,
       content: body.content,
       tags: body.tags || []

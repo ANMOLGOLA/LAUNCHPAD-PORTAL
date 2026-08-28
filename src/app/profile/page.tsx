@@ -90,7 +90,7 @@ export default function ProfilePage() {
         
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-bold tracking-tight">Your Profile</h1>
-          <button  onClick={() = className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-white hover:bg-blue-700 h-10 px-4 py-2"> router.push('/claim')}>Back to Dashboard</button>
+          <button onClick={() => router.push('/claim')} className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border border-neutral-700 bg-transparent text-white hover:bg-neutral-800 h-10 px-4 py-2">Back to Dashboard</button>
         </div>
 
         <div className="rounded-xl border ">

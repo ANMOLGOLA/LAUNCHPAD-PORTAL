@@ -98,7 +98,7 @@ export default function CommunityHubPage() {
               {loading ? <p>Loading discussions...</p> : (
                 posts.length === 0 ? <p className="text-neutral-500">No discussions yet. Be the first!</p> :
                 posts.map(post => (
-                  <Card key={post.id} className="bg-neutral-900 border-neutral-800">
+                  <div key={post.id} className="rounded-xl border bg-neutral-900 border-neutral-800">
                     <div className="p-6 pb-2 ">
                       <h3 className="font-semibold tracking-tight ">{post.title}</h3>
                       <p className="text-xs text-neutral-500">Posted by {post.author_name} • {new Date(post.created_at).toLocaleDateString()}</p>
@@ -108,7 +108,7 @@ export default function CommunityHubPage() {
                         {post.content}
                       </p>
                       <div className="mt-4 flex gap-2">
-                        <button  size="sm" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 h-8 text-neutral-400 hover:text-white">
+                        <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 px-4 py-2 h-8 text-neutral-400 hover:text-white">
                           <MessageSquare className="w-4 h-4 mr-2" /> Reply
                         </button>
                       </div>

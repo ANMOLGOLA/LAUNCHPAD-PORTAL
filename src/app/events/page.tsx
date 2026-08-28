@@ -42,7 +42,7 @@ export default function EventsAnnouncementsPage() {
             </div>
           ) : (
             announcements.map((ann) => (
-              <Card key={ann.id} className={`bg-neutral-900 border-neutral-800 relative overflow-hidden ${ann.priority === 'high' ? 'ring-1 ring-blue-500/50' : ''}`}>
+              <div key={ann.id} className={`rounded-xl border bg-neutral-900 border-neutral-800 relative overflow-hidden ${ann.priority === 'high' ? 'ring-1 ring-blue-500/50' : ''}`}>
                 {ann.priority === 'high' && (
                   <div className="absolute top-0 right-0 w-16 h-16 bg-blue-500/10 flex items-start justify-end p-3 rounded-bl-full">
                     <BellRing className="w-4 h-4 text-blue-500" />

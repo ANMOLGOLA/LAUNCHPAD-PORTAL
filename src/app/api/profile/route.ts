@@ -13,7 +13,7 @@ export async function GET(request: Request) {
     let profile = await db.getUserProfile(claim.email);
     if (!profile) {
       profile = await db.createOrUpdateUserProfile(claim.email, {
-        name: claim.name || claim.email.split('@')[0],
+        name: claim.email.split('@')[0],
       });
     }
 
