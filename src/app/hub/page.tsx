@@ -82,7 +82,7 @@ export default function CommunityHubPage() {
             onClick={() => setTab('discussions')}
             className={`font-semibold pb-2 border-b-2 transition ${tab === 'discussions' ? 'border-blue-500 text-blue-500' : 'border-transparent text-neutral-500 hover:text-neutral-300'}`}
           >
-            Discussions
+            Achievement Feed
           </button>
           <button 
             onClick={() => setTab('resources')}
@@ -95,21 +95,24 @@ export default function CommunityHubPage() {
         {tab === 'discussions' && (
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-6">
-              {loading ? <p>Loading discussions...</p> : (
-                posts.length === 0 ? <p className="text-neutral-500">No discussions yet. Be the first!</p> :
+              {loading ? <p>Loading feed...</p> : (
+                posts.length === 0 ? <p className="text-neutral-500">No achievements posted yet. Be the first to share your win!</p> :
                 posts.map(post => (
-                  <div key={post.id} className="rounded-xl border bg-neutral-900 border-neutral-800">
-                    <div className="p-6 pb-2 ">
-                      <h3 className="font-semibold tracking-tight ">{post.title}</h3>
-                      <p className="text-xs text-neutral-500">Posted by {post.author_name} • {new Date(post.created_at).toLocaleDateString()}</p>
+                  <div key={post.id} className="rounded-xl border bg-neutral-900 border-neutral-800 overflow-hidden relative">
+                    <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+                      <Send className="w-24 h-24 text-blue-500" />
                     </div>
-                    <div className="p-6 pt-0">
-                      <p className="text-neutral-300 whitespace-pre-wrap leading-relaxed text-sm">
+                    <div className="p-6 pb-2 relative z-10">
+                      <h3 className="font-bold text-lg tracking-tight text-blue-400">{post.title}</h3>
+                      <p className="text-xs text-neutral-500">Shared by <span className="text-neutral-300 font-medium">{post.author_name}</span> • {new Date(post.created_at).toLocaleDateString()}</p>
+                    </div>
+                    <div className="p-6 pt-0 relative z-10">
+                      <p className="text-neutral-300 whitespace-pre-wrap leading-relaxed">
                         {post.content}
                       </p>
                       <div className="mt-4 flex gap-2">
-                        <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 px-4 py-2 h-8 text-neutral-400 hover:text-white">
-                          <MessageSquare className="w-4 h-4 mr-2" /> Reply
+                        <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 px-4 py-2 h-8 text-neutral-400 hover:text-white bg-neutral-800/50 hover:bg-neutral-800">
+                          <MessageSquare className="w-4 h-4 mr-2" /> Congratulate
                         </button>
                       </div>
                     </div>
@@ -119,31 +122,33 @@ export default function CommunityHubPage() {
             </div>
 
             <div className="md:col-span-1">
-              <div className="rounded-xl border ">
-                <div className="p-6 pb-2">
-                  <h3 className="text-lg font-semibold tracking-tight">Start a Discussion</h3>
+              <div className="rounded-xl border bg-neutral-900 border-neutral-800 shadow-xl">
+                <div className="p-6 pb-2 border-b border-neutral-800/50 mb-4 bg-blue-900/10">
+                  <h3 className="text-lg font-semibold tracking-tight text-blue-400 flex items-center gap-2">
+                    Share a Win 🚀
+                  </h3>
                 </div>
-                <div className="p-6 pt-0 ">
+                <div className="p-6 pt-0 space-y-4">
                   <input
                     type="text"
-                    placeholder="Discussion Title"
+                    placeholder="E.g., Earned my Cloud Certificate!"
                     value={newTitle}
                     onChange={(e) => setNewTitle(e.target.value)}
-                    className="w-full bg-neutral-950 border border-neutral-800 rounded-md p-2 text-sm focus:outline-none focus:border-blue-500"
+                    className="w-full bg-neutral-950 border border-neutral-800 rounded-md p-3 text-sm focus:outline-none focus:border-blue-500 placeholder:text-neutral-600 font-medium"
                   />
                   <textarea
-                    placeholder="What's on your mind?"
+                    placeholder="Tell the community about your achievement, what you learned, or what's next..."
                     value={newContent}
                     onChange={(e) => setNewContent(e.target.value)}
                     rows={5}
-                    className="w-full bg-neutral-950 border border-neutral-800 rounded-md p-2 text-sm focus:outline-none focus:border-blue-500"
+                    className="w-full bg-neutral-950 border border-neutral-800 rounded-md p-3 text-sm focus:outline-none focus:border-blue-500 placeholder:text-neutral-600"
                   />
                   <button 
-                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center gap-2"
+                    className="inline-flex items-center justify-center rounded-md text-sm font-bold transition-all focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 h-11 px-4 py-2 w-full bg-blue-600 text-white hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-900/50 flex items-center justify-center gap-2"
                     onClick={handlePost}
                     disabled={posting}
                   >
-                    <Send className="w-4 h-4" /> {posting ? 'Posting...' : 'Post'}
+                    <Send className="w-4 h-4" /> {posting ? 'Posting...' : 'Share to Feed'}
                   </button>
                 </div>
               </div>
