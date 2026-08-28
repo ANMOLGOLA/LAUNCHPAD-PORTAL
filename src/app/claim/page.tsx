@@ -116,6 +116,9 @@ export default function ClaimPage() {
           <button onClick={() => router.push('/events')} className="text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-xl transition border border-emerald-200">
             Events
           </button>
+          <button onClick={() => router.push('/teams')} className="text-sm font-semibold text-violet-700 bg-violet-50 hover:bg-violet-100 px-4 py-2 rounded-xl transition border border-violet-200">
+            Teams
+          </button>
           <button
             onClick={async () => {
               try {

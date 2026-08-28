@@ -3,6 +3,16 @@ import path from 'path';
 import { createClient } from '@supabase/supabase-js';
 
 // Define DB Types
+export interface Team {
+  id: string;
+  name: string;
+  description?: string;
+  leader_email: string;
+  member_emails: string[];
+  event_id?: string;
+  created_at?: string;
+}
+
 export interface UserProfile {
   id: string; // auth id or random UUID
   email: string;
@@ -481,5 +491,47 @@ export const db = {
     }
     const { data } = await supabase!.from('audit_logs').select('*').order('created_at', { ascending: false });
     return data || [];
+  },
+
+  // 🤝 Teams 🤝
+  async createTeam(teamData: Omit<Team, 'id' | 'created_at'>): Promise<Team> {
+    const newTeam = { ...teamData, id: crypto.randomUUID(), created_at: new Date().toISOString() };
+    if (isMock) {
+      const store = readMockDB();
+      if (!store.teams) store.teams = [];
+      store.teams.push(newTeam);
+      writeMockDB(store);
+      return newTeam;
+    }
+    return newTeam; // Supabase not implemented yet for teams
+  },
+
+  async getTeams(): Promise<Team[]> {
+    if (isMock) {
+      const store = readMockDB();
+      return store.teams || [];
+    }
+    return [];
+  },
+
+  async getTeamById(id: string): Promise<Team | null> {
+    if (isMock) {
+      const store = readMockDB();
+      return store.teams?.find((t: any) => t.id === id) || null;
+    }
+    return null;
+  },
+
+  async updateTeam(id: string, updates: Partial<Team>): Promise<Team | null> {
+    if (isMock) {
+      const store = readMockDB();
+      if (!store.teams) store.teams = [];
+      const idx = store.teams.findIndex((t: any) => t.id === id);
+      if (idx === -1) return null;
+      store.teams[idx] = { ...store.teams[idx], ...updates };
+      writeMockDB(store);
+      return store.teams[idx];
+    }
+    return null;
   }
 };
